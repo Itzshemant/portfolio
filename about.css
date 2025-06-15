@@ -1,0 +1,239 @@
+/* home.css
+/* ///////////////////// */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.9;
+}
+
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* centers vertically */
+  text-align: center;
+  padding: 20px;
+}
+
+.info {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 20px;
+  border: 3px solid #45495507;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+  max-width: 1000px; 
+  width: 90%;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.info a{
+  color: #dacf3f;
+  font-size: medium ;
+}
+
+.info .resume a{
+  color: #dacf3f;
+  font-size: medium ;
+}
+
+
+.info p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.1em;
+  line-height: 1.6;
+  letter-spacing: 1.2px;
+  text-align: left;
+}
+
+.resume button{
+  background-color: rgb(212, 212, 212);
+  color: black;
+  padding: 3px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  margin: 5px;
+  z-index: 1;
+  border:none;
+}
+
+.info .resume button a{
+  color: rgb(19, 18, 18);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* covers screen without distortion */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.back-link {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: aliceblue;
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.back-link:hover {
+  background-color: lightgray;
+}
+
+.container {
+  /* border: 1px solid rgb(201, 10, 10);             border */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  width: 100%;
+  padding: 10px;
+}
+
+.nav-inner {
+  width: 100%;
+}
+
+.nav-inner ul {
+  /* border: 1px solid white;          border */
+  /* padding: 10px; */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+ul li {
+  /* font-size: 2px; */
+  background-color: rgb(212, 212, 212);
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  margin: 5px;
+  z-index: 1;
+}
+
+a {
+
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: clamp(12px, 2vw, 18px);
+}
+
+.footer {
+  /* position: absolute;
+  bottom: 0;
+  left: 0; */
+  width: 100%;
+  /* background: rgb(12, 12, 12, 0.2); */
+  color: white;
+  text-align: center;
+  padding: 10px 0px;
+  z-index: 10;
+
+
+  /* display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 0px; */
+
+
+  margin-top: auto;
+  /* gap: 110px; */
+}
+
+.images {
+  display: flex;
+  justify-content: center; /* centers the images */
+  align-items: center;
+  gap: 11px; /* horizontal gap between images */
+}
+
+.footer img{
+  height: 25px;
+  width: 25px;
+  border-radius: 50px;
+  position: relative;
+  /* top: 0; */
+  cursor: pointer;
+}
+
+.footer p{
+  font-family: "Gill Sans", sans-serif;
+  letter-spacing: 1.5px;
+  line-height: 5px;
+  font-size: small;
+} 
+
+
